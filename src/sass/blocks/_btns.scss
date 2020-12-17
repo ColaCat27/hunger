@@ -1,0 +1,18 @@
+.btn {
+    display: block;
+    height: 60px;
+    width: 200px;
+    background-color: $main-color;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+    &_transparent {
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}

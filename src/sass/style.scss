@@ -12,5 +12,15 @@
     margin: 0 auto;
 }
 
+
+.divider {
+    margin: 0 auto;
+    width: 61px;
+    height: 5px;
+    background: $main-color;
+    border-radius: 5px;
+}
+
 @import 'blocks/title';
 @import 'blocks/header';
+@import 'blocks/btns';
