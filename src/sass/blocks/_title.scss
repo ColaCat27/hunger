@@ -5,6 +5,7 @@
     letter-spacing: 0.5em;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .title {
@@ -26,6 +27,7 @@
     line-height: 28px;
     text-align: center;
     color: #000000;
+    margin-top: 20px;
     &_white {
         color: #fff;
     }
@@ -37,6 +39,7 @@
     line-height: 24px;
     text-align: center;
     color: #000;
+    margin-top: 30px;
     &_white {
         color: rgba(255, 255, 255, 0.9);
     }

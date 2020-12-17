@@ -1,19 +1,23 @@
-.about {
-    padding: 100px 0 100px 0;
+.team {
+    padding: 45px 0 100px 0;
+    height: 675px;
+    background: url('../../img/out-team-bg.jpg') center (center / cover) no-repeat;
     &__wrapper {
         display: grid;
-        grid-template-columns: 600px 475px;
+        grid-template-columns: 475px 600px;
         grid-template-rows: 475px;
-        column-gap: 80px;
+        margin-top: 45px;
+        justify-content: center;
     }
     &__block {
         margin-top: 120px;
+        margin-left: 72px;
     }
     &__img {
         position: relative;
         @include round;
         &:before {
-            right: -100px;
+            left: -100px;
             top: 50%;
             transform: translateY(-50%);
         }
