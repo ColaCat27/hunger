@@ -14,6 +14,14 @@
         justify-content: space-around;
         padding-left: 0;
         margin-bottom: 0;
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: 75px;
+            width: 530px;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
     }
     &__link {
         font-weight: 700;
@@ -36,10 +44,21 @@
     }
 
     &__content {
-        margin-top: 150px;
+        position: relative;
+        padding-top: 150px;
         display: grid;
         grid-template-columns: 60px 1000px 60px;
         justify-content: space-between;
+        &:before , &:after {
+            @include line;
+            top: -75px;
+        }
+        &:before {
+            left: 210px;
+        }
+        &:after {
+            right: 210px;
+        }
     }
     &__date {
         width: 700px;
@@ -49,6 +68,21 @@
         line-height: 12px;
         color: #FFFFFF;
         transform: rotate(-90deg) translate(125px,-320px);
+    }
+    &__promo {
+        &:before , &:after {
+            @include line;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:before {
+            top: 36px;
+            height: 454px;
+        }
+        &:after {
+            bottom: -216px;
+            height: 76px;
+        }
     }
     &__header {
         text-align: center;
