@@ -1,0 +1,9 @@
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'libs/bootstrap-reboot';
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}

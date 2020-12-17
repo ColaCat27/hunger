@@ -1,0 +1,15 @@
+@mixin round {
+    &:before {
+        width: 250px;
+        height: 250px;
+        border: 20px solid $main-color;
+        border-radius: 5px;
+    }
+}
+
+@mixin divider {
+    width: 61px;
+    height: 5px;
+    background: $main-color;
+    border-radius: 5px;
+}
