@@ -1,0 +1,100 @@
+.event {
+    padding: 45px 0 45px 0;
+    background: url('../../img/event-bg.jpg') center (center / cover) no-repeat;
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 475px 475px;
+        grid-template-rows: 475px 12px;
+        column-gap: 80px;
+        row-gap: 45px;
+        margin-top: 45px;
+        justify-content: center;
+        &:before , &:after {
+            @include line;
+            height: 675px;
+            top: -103px;
+        }
+        &:before {
+            left: 214px;
+        }
+        &:after {
+            right: 194px;
+        }
+    }
+    &__block {
+        margin-top: 120px;
+        margin-left: 72px;
+    }
+    &__img {
+        position: relative;
+        @include round;
+        &:first-child {
+            &:before {
+                left: -100px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &:last-child {
+            &:before {
+                right: -100px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        img {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &__descr {
+        position: absolute;
+        width: 100%;
+        height: 81px;
+        background: #000000;
+        padding: 0 20px;
+
+        font-family: 'Banny';
+        font-size: 24px;
+        line-height: 80px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        &_first {
+            transform: rotate(90deg);
+            top: 197px;
+            right: -198px;
+            border-radius: 5px 5px 0px 0px;
+        }
+        &_second {
+            transform: rotate(-90deg);
+            top: 197px;
+            left: -198px;
+            border-radius: 5px 5px 0px 0px;
+        }
+    }
+    &__call {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        grid-column: 1/3;
+        span {
+            font-weight: 700;
+        }
+    }
+    .section-header {
+        position: relative;
+        &:before {
+            @include line;
+            left: 50%;
+            top: -45px;
+            height: 675px;
+            transform: translate(-50%);
+        }
+    }
+}
