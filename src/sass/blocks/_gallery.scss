@@ -1,0 +1,14 @@
+.gallery {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__item {
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

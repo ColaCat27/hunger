@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -143,7 +144,7 @@
                     <h2 class="book__title title">book a table</h2>
                     <div class="divider"></div>
                     
-                    <form class="book__form">
+                    <form class="book__form form">
 
                         <input type="text" name="name" placeholder="Name">
 
@@ -224,7 +225,7 @@
 
     <section class="menu">
         <div class="container">
-            <h2 class="menu__title title">book a table</h2>
+            <h2 class="menu__title title">DELICIOUS MENU</h2>
             <div class="divider"></div>
             <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis<br> at velit maximus, molestie est a, tempor magna.</div>
 
@@ -367,13 +368,43 @@
     </section>
 
     <section class="gallery">
-        <div class="container">
+ 
             <div class="gallery__wrapper">
-                <div class="gallery__item"><img src="" alt=""></div>
-                <div class="gallery__item"><img src="" alt=""></div>
-                <div class="gallery__item"><img src="" alt=""></div>
-                <div class="gallery__item"><img src="" alt=""></div>
+                <div class="gallery__item"><img src="img/item-1.jpg" alt="photo"></div>
+                <div class="gallery__item"><img src="img/item-2.jpg" alt="photo"></div>
+                <div class="gallery__item"><img src="img/item-3.jpg" alt="photo"></div>
+                <div class="gallery__item"><img src="img/item-4.jpg" alt="photo"></div>
             </div>
+
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="menu__title title">CONTACT</h2>
+            <div class="divider"></div>
+            <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis<br> at velit maximus, molestie est a, tempor magna.</div>
+
+            <form class="contacts__form form">
+
+                <input type="text" name="name" placeholder="Name">
+
+                <input type="email" name="email" placeholder="Email">
+
+                <input type="text" name="phone" placeholder="Phone">
+
+                <textarea name="message" placeholder="Message"></textarea>
+
+                <div class="contacts__wrapper">
+                    <div class="contacts__info">
+                        <div class="contacts__info-item"><i class="fas fa-map-marker-alt"></i><span>5th London Boulevard, U.K.</span></div>
+                        <div class="contacts__info-item"><i class="fas fa-phone"></i><span>+40 729 131 637/+40 726 458 782 </span></div>
+                        <div class="contacts__info-item"><i class="fas fa-envelope"></i><span>office@mindblister.com</span></div>
+                    </div>
+                    <button class="btn contacts__form-btn">BOOK NOW</button>
+                </div>
+
+
+            </form>
         </div>
     </section>
 </body>
