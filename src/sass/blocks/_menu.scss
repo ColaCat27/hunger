@@ -5,7 +5,7 @@
         margin: 0 auto;
         margin-top: 50px;
         display: grid;
-        grid-template-columns: repeat(7, 120px);
+        grid-template-columns: repeat(7, minmax(auto, 120px));
         justify-content: center;
         &-item {
             border-right: 1px solid rgba(51, 51, 51, 0.2);
@@ -28,14 +28,14 @@
     &__content {
         margin-top: 51px;
         display: grid;
-        grid-template-columns: repeat(3, 363px);
+        grid-template-columns: repeat(3, minmax(auto, 363px));
         column-gap: 87px;
         &-list {
             list-style-type: none;
             margin-bottom: 0;
             padding-left: 0;
             display: grid;
-            grid-template-columns: 363px;
+            grid-template-columns: 100%;
             grid-template-rows: 33px;
             row-gap: 33px;
         }

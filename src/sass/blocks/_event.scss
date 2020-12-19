@@ -4,7 +4,7 @@
     &__wrapper {
         position: relative;
         display: grid;
-        grid-template-columns: 475px 475px;
+        grid-template-columns: minmax(auto, 475px) minmax(auto, 475px);
         grid-template-rows: 475px 12px;
         column-gap: 80px;
         row-gap: 45px;

@@ -5,7 +5,7 @@
     &__nav {
         position: relative;
         display: grid;
-        grid-template-columns: 530px 220px 530px;
+        grid-template-columns: minmax(auto, 530px) minmax(170px, 220px) minmax(auto, 530px);
         grid-template-rows: 150px;
     }
     &__list {
@@ -35,8 +35,9 @@
         }
     }
     &__logo {
-        display: block;
-        padding: 0 35px 28px 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img {
             width: 150px;
             height: 150px;
@@ -47,7 +48,7 @@
         position: relative;
         padding-top: 150px;
         display: grid;
-        grid-template-columns: 60px 1000px 60px;
+        grid-template-columns: 60px minmax(auto, 1000px) 60px;
         justify-content: space-between;
         &:before , &:after {
             @include line;

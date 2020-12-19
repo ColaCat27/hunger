@@ -2,13 +2,12 @@
     padding: 100px 0 45px 0;
     &__wrapper {
         display: grid;
-        grid-template-columns: 600px 475px;
-        grid-template-rows: 475px;
+        grid-template-columns: minmax(auto, 600px) minmax(auto, 475px);
         column-gap: 80px;
         row-gap: 45px;
     }
     &__block {
-        margin-top: 70px;
+        align-self: center;
     }
     &__img {
         position: relative;
@@ -42,7 +41,7 @@
     &__form {
         margin-top: 20px;
         display: grid;
-        grid-template-columns: 277px 277px;
+        grid-template-columns: minmax(auto, 277px) minmax(auto, 277px);
         grid-template-rows: 60px 60px 60px 60px;
         gap: 10px;
         div {

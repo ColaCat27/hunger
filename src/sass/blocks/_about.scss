@@ -2,12 +2,11 @@
     padding: 100px 0 100px 0;
     &__wrapper {
         display: grid;
-        grid-template-columns: 600px 475px;
-        grid-template-rows: 475px;
+        grid-template-columns: minmax(auto, 600px) minmax(auto, 475px);
         column-gap: 80px;
     }
     &__block {
-        margin-top: 120px;
+        align-self: center;
     }
     &__img {
         position: relative;
