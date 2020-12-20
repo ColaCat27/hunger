@@ -48,9 +48,11 @@
         line-height: 18px;
         color: #FFFFFF;
         letter-spacing: 0;
+        transition: .3s all;
         &:hover {
             color: #fff;
             text-decoration: none;
+            opacity: .7;
         }
     }
     &__logo {
@@ -131,6 +133,10 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+        transition: .3s all;
+        &:hover {
+            background-color: $main-color;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -145,6 +151,10 @@
         justify-content: center;
         margin: 0 auto;
         margin-top: 80px;
+        transition: .3s all;
+        // &:hover {
+        //     background-color: $main-color;
+        // }
     }
     &__arrow-link {
         width: 40px;
@@ -154,5 +164,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: .3s all;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
