@@ -190,3 +190,104 @@
         }
     }
 }
+@media (max-width: 576px) {
+    .header {
+        padding: 0 0 0 0;
+        height: 100vh;
+        &__burger {
+            display: flex;
+        }
+        &__nav {
+            position: absolute;
+            grid-template-columns: 320px;
+            grid-template-rows: repeat(2, 140px);
+            row-gap: 10px;
+            background-color: rgba(0,0,0,0.9);
+            width: 50%;
+            z-index: 3;
+            align-content: center;
+            transition: .3s all;
+            transform: translateX(-130%);
+        }
+        &__logo {
+            display: none;
+        }
+        &__list {
+            margin-top: 0px;
+            flex-direction: column;
+            justify-content: space-between;
+            &:after {
+                display: none;
+            }
+        }
+        &__link {
+            padding: 5px 20px;
+            font-size: 30px;
+        }
+        &__content {
+            grid-template-columns: 320px;
+            grid-template-rows: 60px 200px 60px;
+            height: 100vh;
+            align-content: space-around;
+            justify-content: center;
+        }
+        &__name {
+            font-size: 24px;
+        }
+        &__date {
+            transform: none;
+            width: 100%;
+            height: auto;
+            font-size: 11px;
+            text-align: center;
+        }
+        &__promo {
+            align-self: center;
+        }
+        &__btns {
+            width: 300px;
+            flex-direction: row;
+        }
+        .btn {
+            width: 140px;
+        }
+        &__arrow {
+            display: none;
+        }
+        &__social {
+            display: flex;
+            margin: 0 auto;
+            &-round {
+                margin: 0 5px 20px 5px;
+            }
+        }
+    }
+    .book {
+        &__wrapper {
+            margin: 0 10px;
+            column-gap: 0px;
+        }
+    }
+    .menu {
+        &__tabs {
+            margin-top: 20px;
+            &-link {
+                font-size: 10px;
+            }
+        }
+        &__content {
+            margin-top: 20px;
+            &-list {
+                row-gap: 10px;
+            }
+            &-name {
+                font-size: 12px;
+                text-align: center;
+            }
+            &-descr {
+                text-align: center;
+                font-size: 10px;
+            }
+        }
+    }
+}
