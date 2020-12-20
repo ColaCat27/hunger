@@ -53,8 +53,8 @@
     }
     &__descr {
         position: absolute;
-        width: 481px;
-        height: 81px;
+        width: 80%;
+        height: 20%;
         background: #000000;
         padding: 0 20px;
 
@@ -65,14 +65,14 @@
         color: #FFFFFF;
         &_first {
             transform: rotate(90deg);
-            top: 200px;
-            right: -200px;
+            top: 40%;
+            right: -32%;
             border-radius: 5px 5px 0px 0px;
         }
         &_second {
             transform: rotate(-90deg);
-            top: 200px;
-            left: -200px;
+            top: 40%;
+            left: -32%;
             border-radius: 5px 5px 0px 0px;
         }
     }
