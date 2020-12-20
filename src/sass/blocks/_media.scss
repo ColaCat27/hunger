@@ -232,13 +232,13 @@
             justify-content: center;
         }
         &__name {
-            font-size: 24px;
+            font-size: 36px;
         }
         &__date {
             transform: none;
             width: 100%;
             height: auto;
-            font-size: 11px;
+            font-size: 13px;
             text-align: center;
         }
         &__promo {
@@ -288,6 +288,41 @@
                 text-align: center;
                 font-size: 10px;
             }
+        }
+    }
+    .specialties {
+        height: 100%;
+    }
+    .event {
+        height: 100%;
+        &__wrapper {
+            column-gap: unset;
+            grid-template-columns: minmax(auto, 600px);
+            row-gap: 20px;
+        }
+        &__img {
+           justify-content: center;
+        }
+        &__descr {
+            &_first, &_second {
+                right: -17%;
+            }
+            &_second {
+                left: -17%;
+            }
+        }
+    }
+    .gallery {
+        &__wrapper {
+            grid-template-columns: minmax(auto, 578px);
+        }
+    }
+    .contacts {
+        &__info {
+            margin-top: 20px;
+            grid-template-columns: auto;
+            row-gap: 10px;
+            justify-content: center;
         }
     }
 }
