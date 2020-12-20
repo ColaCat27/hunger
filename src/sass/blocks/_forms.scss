@@ -14,6 +14,12 @@
         border-radius: 5px;
         &:focus {
             outline: none;
+            &:invalid {
+                border: 1px solid red;
+            }
+            &:valid {
+                border: 1px solid green;
+            }
         }
     }
     select {
