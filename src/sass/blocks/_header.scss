@@ -2,13 +2,16 @@
     padding: 25px 0 83px 0;
     height: 800px;
     background: url('../../img/header-bg.jpg') center (center / cover) no-repeat;
+    overflow: hidden;
     &__nav {
         position: relative;
         display: grid;
         grid-template-columns: minmax(auto, 530px) minmax(170px, 220px) minmax(auto, 530px);
         grid-template-rows: 150px;
+        z-index: 2;
     }
     &__list {
+        list-style-type: none;
         margin-top: 25px;
         display: flex;
         justify-content: space-around;
@@ -18,7 +21,7 @@
             position: absolute;
             content: '';
             bottom: 75px;
-            width: 530px;
+            width: 40%;
             height: 1px;
             background-color: rgba(255, 255, 255, 0.2);
         }
@@ -71,6 +74,7 @@
         transform: rotate(-90deg) translate(125px,-320px);
     }
     &__promo {
+        z-index: 2;
         &:before , &:after {
             @include line;
             left: 50%;

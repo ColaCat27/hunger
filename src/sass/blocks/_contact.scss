@@ -5,6 +5,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(auto, 420px));
         grid-template-rows: 60px 120px 60px;
+        grid-auto-rows: 60px;
         gap: 10px;
         textarea {
             grid-column: 1/4;

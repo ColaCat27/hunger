@@ -1,6 +1,7 @@
 .about {
     padding: 100px 0 100px 0;
     &__wrapper {
+        z-index: 2;
         display: grid;
         grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
         column-gap: 80px;
