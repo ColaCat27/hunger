@@ -303,7 +303,7 @@
                 row-gap: 10px;
             }
             &-name {
-                font-size: 12px;
+                font-size: 11px;
                 text-align: center;
             }
             &-descr {
@@ -336,7 +336,10 @@
     }
     .gallery {
         &__wrapper {
-            grid-template-columns: minmax(auto, 578px);
+            padding: 20px;
+            grid-template-columns: minmax(auto, 450px);
+            row-gap: 20px;
+            justify-content: center;
         }
     }
     .contacts {
