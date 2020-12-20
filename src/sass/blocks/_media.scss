@@ -191,11 +191,29 @@
     }
 }
 @media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
     .header {
         padding: 0 0 0 0;
         height: 100vh;
         &__burger {
             display: flex;
+            &_active {
+                div {
+                    transition: .3s all;
+                    &:nth-child(1) {
+                        transform: rotate(-45deg) translate(-15px, 16px);
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
         }
         &__nav {
             position: absolute;
@@ -204,10 +222,14 @@
             row-gap: 10px;
             background-color: rgba(0,0,0,0.9);
             width: 50%;
+            height: 100vh;
             z-index: 3;
             align-content: center;
             transition: .3s all;
             transform: translateX(-130%);
+            &_active {
+                transform: translateX(-5%);
+            }
         }
         &__logo {
             display: none;
