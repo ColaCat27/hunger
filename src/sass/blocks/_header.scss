@@ -73,6 +73,7 @@
         padding-top: 150px;
         display: grid;
         grid-template-columns: 60px minmax(auto, 1000px) 60px;
+        grid-template-rows: auto 250px;
         justify-content: space-between;
     }
     &__date {

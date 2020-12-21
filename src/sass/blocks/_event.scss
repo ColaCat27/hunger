@@ -4,6 +4,7 @@
     padding: 45px 0 45px 0;
     background: url('../../img/event-bg.jpg') center (center / cover) no-repeat;
     &__wrapper {
+        z-index: 1;
         position: relative;
         display: grid;
         grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
