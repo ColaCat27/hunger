@@ -185,6 +185,9 @@
         height: 100vh;
         &__burger {
             display: flex;
+            div {
+                transform: rotate(0) translate(0,0);
+            }
             &_active {
                 div {
                     transition: .3s all;
