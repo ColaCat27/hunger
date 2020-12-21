@@ -1,0 +1,39 @@
+.line {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    &__item_horizontal {
+        position: absolute;
+        width: 40%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+        &:nth-child(1) {
+            top: 75px;
+            left: 0px;
+        }
+        &:nth-child(2) {
+            top: 75px;
+            right: 0px;
+        }
+    }
+    &__item_vertical {
+        position: absolute;
+        top: 75px;
+        width: 1px;
+        height: 90%;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    &_first {
+        left: 155px;
+    }
+    &_second {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &_third {
+        right: 155px;
+    }
+}

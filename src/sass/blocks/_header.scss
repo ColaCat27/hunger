@@ -1,8 +1,19 @@
 .header {
     padding: 25px 0 83px 0;
-    height: 800px;
+    height: 100vh;
     background: url('../../img/header-bg.jpg') center (center / cover) no-repeat;
     overflow: hidden;
+    .container {
+        position: relative;
+        z-index: 2;
+        height: 100vh;
+    }
+    .line {
+        &_second {
+            top: 175px;
+            height: 80%;
+        }
+    }
     &__burger {
         position: absolute;
         top: 20px;
@@ -33,14 +44,6 @@
         justify-content: space-around;
         padding-left: 0;
         margin-bottom: 0;
-        &:after {
-            position: absolute;
-            content: '';
-            bottom: 75px;
-            width: 40%;
-            height: 1px;
-            background-color: rgba(255, 255, 255, 0.2);
-        }
     }
     &__link {
         font-weight: 700;
@@ -71,16 +74,6 @@
         display: grid;
         grid-template-columns: 60px minmax(auto, 1000px) 60px;
         justify-content: space-between;
-        &:before , &:after {
-            @include line;
-            top: -75px;
-        }
-        &:before {
-            left: 210px;
-        }
-        &:after {
-            right: 210px;
-        }
     }
     &__date {
         width: 700px;
@@ -93,19 +86,6 @@
     }
     &__promo {
         z-index: 2;
-        &:before , &:after {
-            @include line;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        &:before {
-            top: 36px;
-            height: 454px;
-        }
-        &:after {
-            bottom: -216px;
-            height: 76px;
-        }
     }
     &__header {
         text-align: center;
@@ -134,6 +114,7 @@
         justify-content: center;
         margin-bottom: 20px;
         transition: .3s all;
+        z-index: 2;
         &:hover {
             background-color: $main-color;
         }
@@ -141,7 +122,14 @@
             margin-bottom: 0;
         }
     }
+    &__social-link {
+        z-index: 2;
+    }
     &__arrow {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
         border: 1px solid rgba(255, 255, 255, 0.2);
         width: 60px;
         height: 60px;
@@ -149,12 +137,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto;
-        margin-top: 80px;
         transition: .3s all;
-        // &:hover {
-        //     background-color: $main-color;
-        // }
+        z-index: 2;
     }
     &__arrow-link {
         width: 40px;
@@ -165,6 +149,7 @@
         align-items: center;
         justify-content: center;
         transition: .3s all;
+        z-index: 2;
         &:hover {
             transform: scale(1.2);
         }

@@ -1,4 +1,5 @@
 .event {
+    position: relative;
     height: 675px;
     padding: 45px 0 45px 0;
     background: url('../../img/event-bg.jpg') center (center / cover) no-repeat;
@@ -9,17 +10,6 @@
         column-gap: 80px;
         margin-top: 45px;
         justify-content: center;
-        &:before , &:after {
-            @include line;
-            height: 675px;
-            top: -103px;
-        }
-        &:before {
-            left: 214px;
-        }
-        &:after {
-            right: 194px;
-        }
     }
     &__block {
         align-self: center;
@@ -90,14 +80,26 @@
             font-weight: 700;
         }
     }
-    .section-header {
-        position: relative;
-        &:before {
-            @include line;
+    .line {
+        &__item_horizontal {
+            display: none;
+        }
+        &__item_vertical {
+            position: absolute;
+            top: 0px;
+            width: 1px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        &_first {
+            left: 155px;
+        }
+        &_second {
             left: 50%;
-            top: -45px;
-            height: 675px;
-            transform: translate(-50%);
+            transform: translateX(-50%);
+        }
+        &_third {
+            right: 155px;
         }
     }
 }

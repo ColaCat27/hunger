@@ -1,4 +1,5 @@
 .team {
+    position: relative;
     padding: 45px 0 100px 0;
     height: 675px;
     background: url('../../img/out-team-bg.jpg') center (center / cover) no-repeat;
@@ -9,17 +10,6 @@
         grid-template-columns: minmax(auto, 600px) minmax(auto,600px);
         column-gap: 72px;
         margin-top: 45px;
-        &:before , &:after {
-            @include line;
-            height: 675px;
-            top: -103px;
-        }
-        &:before {
-            left: 214px;
-        }
-        &:after {
-            right: 194px;
-        }
     }
     &__block {
         align-self: center;
@@ -42,14 +32,26 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
-    .section-header {
-        position: relative;
-        &:before {
-            @include line;
+    .line {
+        &__item_horizontal {
+            display: none;
+        }
+        &__item_vertical {
+            position: absolute;
+            top: 0px;
+            width: 1px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        &_first {
+            left: 155px;
+        }
+        &_second {
             left: 50%;
-            top: -45px;
-            height: 675px;
-            transform: translate(-50%);
+            transform: translateX(-50%);
+        }
+        &_third {
+            right: 155px;
         }
     }
 }
