@@ -50,19 +50,15 @@
             display: none;
         }
     }
+    .line {
+        display: none;
+    }
     .header {
         height: 700px;
         &__content {
             padding-top: 100px;
-            &:before, &:after {
-                display: none;
-            }
         }
-        &__promo {
-            &:before , &:after {
-                display: none;
-            }
-        }
+
         &__name {
             font-size: 62px;
         }
@@ -71,9 +67,6 @@
     .about, .team, .book, .specialties {
         &__wrapper {
             column-gap: 20px;
-            &:before , &:after {
-                display: none;
-            }
         }
     }
     .team, .specialties {
@@ -81,11 +74,6 @@
     }
     .event {
         height: 500px;
-        &__wrapper {
-            &:before , &:after {
-                display: none;
-            }
-        }
         &__img {
             overflow: hidden;
         }
