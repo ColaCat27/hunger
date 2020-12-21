@@ -2,5 +2,11 @@
 //gallery
 lightGallery(document.getElementById('lightgallery'));
 
-// slider
-new Splide( '.splide' ).mount();
+//tabs and slider
+const mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    hashNavigation: {
+        watchState: true
+    }
+});
