@@ -43,25 +43,16 @@
         }
     }
     &__slider {
-        &-nav {
-            width: 80px;
-            margin: 0 auto;
-            margin-top: 45px;
-            display: grid;
-            grid-template-columns: 10px 10px 10px;
-            column-gap: 25px;
-        }
-        &-dott {
-            cursor: pointer;
-            width: 10px;
-            height: 10px;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 100%;
-            &_active {
-                background: #fff;
-            }
-        }
+        position: relative;
     }
+
+    .splide__pagination {
+        bottom: -50px;
+    }
+    .splide__arrow {
+        display: none;
+    }
+
     .section-header {
         position: relative;
         &:before {
