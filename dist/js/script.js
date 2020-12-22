@@ -23,13 +23,13 @@ const mySwiper = new Swiper('.swiper-container', {
 //smooth scrolling
 
 function scrollToElem() {
-    const anchors = document.querySelectorAll('a[href*="#"]');
+    const anchors = document.querySelectorAll('a[data-target]');
 
     anchors.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
 
-            let target = item.getAttribute('href').slice(1);
+            let target = item.getAttribute('data-target');
             const elem = document.querySelector(`#${target}`);
 
             elem.scrollIntoView({
