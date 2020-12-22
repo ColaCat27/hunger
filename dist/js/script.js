@@ -8,8 +8,6 @@ burger.addEventListener('click', () => {
     menu.classList.toggle('header__nav_active');
 });
 
-
-
 //gallery
 lightGallery(document.getElementById('lightgallery'));
 
@@ -21,5 +19,26 @@ const mySwiper = new Swiper('.swiper-container', {
         watchState: true
     }
 });
+
+//smooth scrolling
+
+function scrollToElem() {
+    const anchors = document.querySelectorAll('a[href*="#"]');
+
+    anchors.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            let target = item.getAttribute('href').slice(1);
+            const elem = document.querySelector(`#${target}`);
+
+            elem.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+}
+
+scrollToElem();
 
 });
