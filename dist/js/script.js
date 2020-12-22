@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener('DOMContentLoaded', () => {
 //menu 
 const burger = document.querySelector('.header__burger'),
@@ -12,12 +14,18 @@ burger.addEventListener('click', () => {
 lightGallery(document.getElementById('lightgallery'));
 
 //tabs and slider
+
 const mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
-    loop: true,
-    hashNavigation: {
-        watchState: true
-    }
+    loop: true
+});
+
+const tabItems = document.querySelectorAll('.menu__tabs-item');
+
+tabItems.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        mySwiper[1].slideTo(i,1000, false);
+    });
 });
 
 //smooth scrolling
