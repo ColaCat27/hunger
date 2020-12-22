@@ -56,4 +56,14 @@
             right: 155px;
         }
     }
+    .swiper-pagination {
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        &-bullet {
+            background: #fff;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+    }
 }

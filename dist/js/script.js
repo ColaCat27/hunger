@@ -17,7 +17,10 @@ lightGallery(document.getElementById('lightgallery'));
 
 const mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
-    loop: true
+    loop: true, 
+    autoplay: {
+        delay: 5000,
+      }
 });
 
 const tabItems = document.querySelectorAll('.menu__tabs-item');
