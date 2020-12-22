@@ -50,9 +50,9 @@
         display: none;
     }
     .header {
-        height: 700px;
+        height: 100vh;
         &__content {
-            padding-top: 100px;
+            padding-top: 60px;
             grid-template-rows: auto 200px;
         }
 
