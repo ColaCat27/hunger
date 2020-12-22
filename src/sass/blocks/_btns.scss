@@ -5,15 +5,19 @@
     background-color: $main-color;
     border: none;
     border-radius: 5px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 60px;
 
     color: #FFFFFF;
     transition: .3s;
+    text-decoration: none;
     &:hover {
-        opacity: .7;
+        color: #fff;
+        text-decoration: none;
+        opacity: .8;
     }
     &_transparent {
         background-color: transparent;
